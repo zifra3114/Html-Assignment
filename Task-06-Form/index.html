@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body bgcolor="#0096C7">
+    <font face="arial" color="white" size="6">
+        &nbsp;  &nbsp;  &nbsp;   &nbsp;   &nbsp;
+        <p>   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;Contact form</p>
+    </font>
+    <font  color="white">
+        <p>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;Please fill your information and we'll be sending your order in your time</p>
+    </font>
+    <br>
+    <form action="/submit" method="POST">
+        <font color="white">
+            <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="First Name" size="33">
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Last Name" size="33">
+        </font>
+        <br><br>
+        <font color="white">
+            <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Email</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Email" placeholder="e.g.hello@gmail.com" size="75">
+        </font>
+        <br><br>
+        <font color="white">
+            <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone*</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" placeholder="###" size="5">
+            &nbsp;&nbsp;&nbsp;<input type="number" placeholder="###" size="3">
+            &nbsp;&nbsp;&nbsp;<input type="number" placeholder="###" size="3">
+        </font>
+        <br><br>
+        <font color="white">
+            <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message Subject*</label>
+          <select name="Subject" id="Subject">
+          <option value="other">Other</option>
+          <option value="Biology">Biology</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Physics">Physics</option>
+        </select>
+        </font>
+        <br><br>
+        <font color="white">
+            <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message *</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="Message" id="Message" rows="5" cols="20"></textarea>
+        </font>
+        <br><br>
+        <font color="white">
+            <label for="robotcheck">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verification
+                &nbsp;&nbsp;&nbsp;<input type="checkbox" name="checkbox" required>
+            I am not a Robot
+        </label>
+        </font> <br><br>
+        <hr color="white" width="900" size="6">
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Submit</button>
+    </form>
+</body>
+</html>
